@@ -1,35 +1,135 @@
 body {
     display: flex;
     flex-flow: column nowrap;
-    flex: 1;
+    flex: 1 0 auto;
+    margin: 0;
 }
 
 .header {
+    justify-content: space-between;
+}
+
+.header,
+.footer {
     display: flex;
-    flex: 1;    
+    flex: 1;
+    background-color:rgb(43, 53, 67);
+    color: white;
+}
+
+.header .left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 8px 8px 100px;
+    font-weight: bold;
+    font-size: 16;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+}
+
+.header .right {
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    list-style: none;
+    padding: 8px 100px 8px 8px;
+    gap: 22px;
 }
 
 .hook {
     display: flex;
-    flex: 1;
+    background-color:darkcyan;
+    color: white;
+    justify-content: space-between;
+}
+
+.hook .container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 64px 24px 64px 100px;
+    gap: 16px;
+}
+
+.hook .sub-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.hook img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 100px 64px 24px;
+    width: 1000px;
+    height: auto;
+}
+
+.hook button {
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
+    border: 2px solid blue;
 }
 
 .content {
+    flex-flow: column nowrap;
+}
+
+.content .sub-title {
+    text-align: center;
+}
+
+.content .container {
     display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    gap: 8px;
+}
+
+.card {
+    width: 100px;
+    height: auto;
+    flex-flow: column wrap;
     flex: 1;
 }
 
 .quote {
     display: flex;
+    flex-flow: column wrap;
     flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    background-color: lightslategray;
 }
 
 .signup {
     display: flex;
-    flex: 1;
+    flex-flow: column nowrap;
+}
+
+.signup .container {
+    padding: 8px;
+    margin: 24px;
+    background-color: lightblue;
+    color: white;
+}
+
+.signup .texts {
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .footer {
-    display: flex;
-    flex: 1;
+    justify-content: center;
+    padding: 12px;
 }
