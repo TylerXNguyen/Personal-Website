@@ -69,7 +69,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 64px 100px 64px 24px;
-    width: 1000px;
+    width: 750px;
     height: auto;
 }
 
@@ -78,6 +78,7 @@ body {
     color: white;
     border-radius: 4px;
     border: 2px solid blue;
+    font-size: 20px;
 }
 
 .content {
@@ -86,47 +87,113 @@ body {
 
 .content .sub-title {
     text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 42px;
 }
 
 .content .container {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
-    gap: 8px;
+    justify-content: center;
+    padding: 24px 8px 64px;
+    gap: 100px;
 }
 
-.card {
-    width: 100px;
-    height: auto;
+.content .card {
     flex-flow: column wrap;
-    flex: 1;
+    width: 200px;
+    height: 200px;
+    padding: 24px;
+}
+
+.content img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    border: 3px solid blue;
+}
+
+.content .sub-info {
+    flex-flow: column wrap;
+    text-align: center;
+    padding: 12px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .quote {
     display: flex;
     flex-flow: column wrap;
-    flex: 1;
     justify-content: center;
     align-items: center;
-    padding: 60px;
     background-color: lightslategray;
+}
+
+.quote .quote-text {
+    width: 750px;
+    height: auto;
+    padding: 44px 12px 6px;
+    font-size: 20px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.quote .author {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    padding: 34px;
 }
 
 .signup {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
+    align-items: center;
 }
 
 .signup .container {
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 0;
+    width: 800px;
     padding: 8px;
     margin: 24px;
     background-color: lightblue;
     color: white;
+    border-radius: 10px;
+    padding: 24px 40px 24px;
+    justify-content: space-around;
 }
 
 .signup .texts {
+    width: 600px;
     justify-content: flex-start;
     align-items: flex-start;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.signup .sub-title {
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 6px;
+}
+
+.signup button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 125px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: darkblue;
+    border: 2px solid white;
+    color: white;
+    font-size: 20px;
+
 }
 
 .footer {
