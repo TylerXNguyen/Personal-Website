@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1;
+}
+
+.header {
+    display: flex;
+    flex: 1;    
+}
+
+.hook {
+    display: flex;
+    flex: 1;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+}
+
+.quote {
+    display: flex;
+    flex: 1;
+}
+
+.signup {
+    display: flex;
+    flex: 1;
+}
+
+.footer {
+    display: flex;
+    flex: 1;
+}
